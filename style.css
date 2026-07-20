@@ -1,0 +1,377 @@
+/* style.css */
+/* reset geral do site (remove margens padrão e organiza o tamanho dos elementos) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilo geral do site (fonte, cor do texto e fundo) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #c0c0c2;
+}
+
+/* centralizar todo o conteúdo principal do site */
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+/* ====== HEADER MODERNO ====== */
+
+/* estilização do cabeçalho (caixa branca com sombra e borda) */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  margin-top: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  padding-bottom: 25px;
+}
+
+/* alinhar nome e menu na mesma linha */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* tamanho do nome principal */
+h1 {
+  font-size: 32px;
+}
+
+/* ====== MENU ====== */
+
+/* organizar os links do menu na horizontal */
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* estilo padrão dos links */
+a {
+  color: #0b5cff;
+  text-decoration: none;
+}
+
+/* aparência dos botões do menu */
+nav a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* efeito ao passar o mouse no menu */
+nav a:hover {
+  background: rgba(11, 92, 255, 0.10);
+}
+
+/* destacar o botão da página atual */
+nav a.ativo {
+  background: #0b5cff;
+  color: white;
+}
+
+/* ====== FOTO ====== */
+
+/* ajustar tamanho e aparência da foto de perfil */
+.foto-perfil {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+  align-self: center;
+}
+
+/* ====== MAIN ====== */
+
+/* estilização da área principal do site */
+main {
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  padding-top: 30px;
+}
+
+/* espaçamento entre seções */
+section {
+  padding: 24px 0;
+}
+
+/* ====== BOTÕES ====== */
+
+/* estilo dos links que funcionam como botão */
+main a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px solid #0b5cff;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* efeito ao passar o mouse nos botões */
+main a:hover {
+  background: #0b5cff;
+  color: white;
+}
+
+/* ====== FOOTER ====== */
+
+/* estilo do rodapé */
+footer {
+  color: #555;
+  padding-bottom: 30px;
+}
+
+/* ====== HERO (parte inicial com foto + texto) ====== */
+
+/* alinhar foto, texto e gif lado a lado */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* limitar largura do texto da apresentação */
+.hero-texto {
+  max-width: 500px;
+}
+
+/* estilo do subtítulo */
+.subtitulo {
+  color: #555;
+  margin-top: 5px;
+}
+
+/* destacar as linguagens */
+.skills {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* cor do HTML */
+.skills .html {
+  color: #E44D26
+}
+
+/* cor do CSS */
+.skills .css {
+  color: #0e5cc2
+}
+
+/* cor do JavaScript */
+.skills .javascript {
+  color: #F0DB4F 
+}
+
+/* cor e espaçamentos dos pontos */
+.skills .separador {
+  color: #555;
+  margin: 0 5px;
+}
+
+/* ====== GIF PIXELADO ====== */
+
+/* posicionar e animar o gif no lado direito da hero */
+.gif-bixinho {
+  width: 160px;
+  height: auto;
+  margin-left: 70px;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+/* movimento do gif subindo e descendo */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* botão principal da hero */
+.botao {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: 1px solid #0b5cff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0b5cff;
+  font-weight: bold;
+}
+
+/* efeito ao passar o mouse no botão principal */
+.botao:hover {
+  background: #0b5cff;
+  color: white;
+}
+
+/* ====== EFEITOS VISUAIS (hover nos quadros) ====== */
+
+/* animação suave */
+header, .hero, main {
+  transition: 0.3s;
+}
+
+/* efeito ao passar o mouse */
+header:hover, .hero:hover, main:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+/* ====== BOTÃO VOLTAR AO TOPO ====== */
+
+/* estilo do botão */
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 12px 16px;
+  font-size: 18px;
+
+  background: #0b5cff;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  display: none;
+}
+
+/* efeito ao passar o mouse no botão voltar ao topo */
+#btnTopo:hover {
+  background: #0840c0;
+}
+
+/* ====== FORMULÁRIO DE CONTATO ====== */
+
+/* organiza os campos um abaixo do outro */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+  margin-top: 20px;
+}
+
+/* cada campo (label + input juntos) */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* estilo do label */
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+/* estilo dos inputs e textarea */
+input, textarea {
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border 0.2s;
+}
+
+/* borda azul ao focar no campo */
+input:focus, textarea:focus {
+  border-color: #0b5cff;
+}
+
+/* botão de envio do formulário */
+form button {
+  padding: 10px 16px;
+  background: #0b5cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+/* efeito ao passar o mouse no botão de envio */
+form button:hover {
+  background: #0840c0;
+}
+
+/* ====== QUADRO DO GITHUB NA PÁGINA PROJETOS ====== */
+
+/* caixa branca do GitHub */
+.github-box {
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 30px;
+
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+
+  transition: 0.3s;
+}
+
+/* botão do GitHub */
+.github-box a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+
+  background: #0b5cff;
+  color: white;
+
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* efeito ao passar o mouse no botão */
+.github-box a:hover {
+  background: #0840c0;
+}
+
+/* efeito ao passar o mouse no quadro */
+.github-box:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}

@@ -1,0 +1,96 @@
+<!-- projetos.html -->
+<!-- define o tipo de documento -->
+<!DOCTYPE html>
+
+<!-- início do HTML + idioma -->
+<html lang="pt-BR">
+
+<head>
+
+    <!-- padrão de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- responsividade (celular) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- título da aba -->
+    <title>Leonardo Gregorio de Sousa</title>
+
+    <!-- conexão com CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+
+        <!-- mesma estrutura da home (mantém padrão visual) -->
+        <div class="topo">
+
+            <h1>Leonardo Gregorio de Sousa</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projetos.html" class="ativo">Projetos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ====== QUADRO DO GITHUB ====== -->
+<section class="github-box">
+  <h2>GitHub</h2>
+
+  <p>
+    Acesse meu perfil no GitHub para ver meus códigos e projetos.
+  </p>
+
+  <a href="https://github.com/Leo2502etec" target="_blank">
+    Meu GitHub
+  </a>
+</section>
+    
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main>
+
+        <!-- seção de projetos -->
+        <section>
+
+            <h2>Projetos</h2>
+
+            <!-- pequena descrição -->
+            <p>
+               Aqui estão alguns projetos que desenvolvi para praticar HTML, CSS e JavaScript.
+            </p>
+
+            <!-- container dos projetos -->
+            <div class="projetos-container">
+
+                <!-- card de projeto -->
+                <div class="projeto-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+
+      <p>© <span id="ano"></span> Leonardo</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

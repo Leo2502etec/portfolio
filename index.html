@@ -1,0 +1,111 @@
+<!-- Index.html -->
+<!-- define o tipo de documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- início do HTML + idioma da página -->
+<html lang="pt-BR">
+
+<head>
+    <!-- define padrão de caracteres (acentos, etc) -->
+    <meta charset="UTF-8">
+
+    <!-- faz o site funcionar bem em celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- título que aparece na aba do navegador -->
+    <title>Leonardo Gregorio de Sousa</title>
+
+    <!-- conecta o CSS -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+   <!-- botão para voltar ao topo -->
+   <button id="btnTopo">↑</button>
+
+   <!-- ====== HEADER (topo do site) ====== -->
+   <header>
+
+    <!-- container que organiza nome + menu -->
+    <div class="topo">
+
+      <!-- seu nome principal -->
+      <h1>Leonardo Gregorio de Sousa</h1>
+
+      <!-- menu de navegação -->
+      <nav>
+        <a href="index.html" class="ativo">Home</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+    </div>
+
+   </header>
+
+   <!-- ====== HERO (parte principal com foto + apresentação) ====== -->
+   <section class="hero">
+
+    <!-- sua foto -->
+    <img src="images/foto.jpeg" alt="Foto de Leonardo" class="foto-perfil">
+
+    <!-- área de texto ao lado da foto -->
+    <div class="hero-texto">
+      <h2>Leonardo Gregorio de Sousa</h2>
+
+      <p class="subtitulo">Estudante de Desenvolvimento de Sistemas</p>
+
+    <!-- linguagens -->
+      <p class="skills">
+         <span class="html">HTML</span>
+         <span class="separador">•</span>
+         <span class="css">CSS</span>
+         <span class="separador">•</span>
+         <span class="javascript">JavaScript</span>
+      </p>
+
+      <a href="projetos.html" class="botao">
+        Meus Projetos 
+      </a>
+    </div>
+
+    <!-- gif pixelado decorativo -->
+    <img src="images/img.gif" alt="Gif pixelado" class="gif-bixinho">
+
+   </section>
+    
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main>
+
+        <!-- seção sobre mim -->
+        <section>
+
+            <h2>Sobre mim</h2>
+
+            <p>
+              Sou estudante de Desenvolvimento de Sistemas pela ETEC, com interesse em desenvolvimento web.
+              Tenho experiência com HTML, CSS e JavaScript, além de conhecimentos em Java.
+              Busco minha primeira oportunidade na área para evoluir minhas habilidades e ganhar experiência prática.
+            </p>
+
+            <a href="https://www.linkedin.com/in/leonardo-g-74b6903b3/"
+            target="_blank"
+            class="botao">
+            Ver Linkedin
+          </a>
+
+        </section>
+
+    </main>
+
+    <!-- ====== RODAPÉ ====== -->
+    <footer>
+      <p>© <span id="ano"></span> Leonardo</p>
+    </footer>
+
+    <!-- conecta o JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
