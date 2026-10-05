@@ -10,8 +10,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  color: #111;
-  background: #c0c0c2;
+  color: #e6edf3;
+  background: #0d1117;
 }
 
 /* centralizar todo o conteúdo principal do site */
@@ -28,8 +28,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 14px;
   margin-top: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -61,7 +61,7 @@ nav {
 
 /* estilo padrão dos links */
 a {
-  color: #0b5cff;
+  color: #58a6ff;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ nav a:hover {
 
 /* destacar o botão da página atual */
 nav a.ativo {
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
 }
 
@@ -90,7 +90,7 @@ nav a.ativo {
   width: 180px;
   height: auto;
   border-radius: 12px;
-  border: 4px solid black;
+  border: 4px solid #58a6ff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
   align-self: center;
 }
@@ -100,8 +100,8 @@ nav a.ativo {
 /* estilização da área principal do site */
 main {
   margin-top: 16px;
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   padding-top: 30px;
@@ -119,14 +119,14 @@ main a {
   display: inline-block;
   margin-top: 12px;
   padding: 10px 14px;
-  border: 1px solid #0b5cff;
+  border: 1px solid #58a6ff;
   border-radius: 10px;
   font-weight: 700;
 }
 
 /* efeito ao passar o mouse nos botões */
 main a:hover {
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
 }
 
@@ -134,7 +134,7 @@ main a:hover {
 
 /* estilo do rodapé */
 footer {
-  color: #555;
+  color: #9da7b3;
   padding-bottom: 30px;
 }
 
@@ -148,8 +148,8 @@ footer {
   max-width: 1000px;
   margin: 40px auto;
 
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 14px;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
@@ -162,7 +162,7 @@ footer {
 
 /* estilo do subtítulo */
 .subtitulo {
-  color: #555;
+  color: #9da7b3;
   margin-top: 5px;
 }
 
@@ -174,12 +174,12 @@ footer {
 
 /* cor do HTML */
 .skills .html {
-  color: #E44D26
+  color: #ff8b66
 }
 
 /* cor do CSS */
 .skills .css {
-  color: #0e5cc2
+  color: #79c0ff
 }
 
 /* cor do JavaScript */
@@ -189,7 +189,7 @@ footer {
 
 /* cor e espaçamentos dos pontos */
 .skills .separador {
-  color: #555;
+  color: #9da7b3;
   margin: 0 5px;
 }
 
@@ -223,16 +223,16 @@ footer {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 16px;
-  border: 1px solid #0b5cff;
+  border: 1px solid #58a6ff;
   border-radius: 10px;
   text-decoration: none;
-  color: #0b5cff;
+  color: #58a6ff;
   font-weight: bold;
 }
 
 /* efeito ao passar o mouse no botão principal */
 .botao:hover {
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
 }
 
@@ -246,7 +246,9 @@ header, .hero, main {
 /* efeito ao passar o mouse */
 header:hover, .hero:hover, main:hover {
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  /* destaca a borda dos quadros ao passar o mouse */
+  border-color: #58a6ff;
 }
 
 /* ====== BOTÃO VOLTAR AO TOPO ====== */
@@ -260,7 +262,7 @@ header:hover, .hero:hover, main:hover {
   padding: 12px 16px;
   font-size: 18px;
 
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
 
   border: none;
@@ -298,11 +300,14 @@ form {
 label {
   font-weight: 600;
   font-size: 14px;
-  color: #333;
+  color: #e6edf3;
 }
 
 /* estilo dos inputs e textarea */
 input, textarea {
+  /* fundo escuro e texto claro nos campos do formulário */
+  background: #0d1117;
+  color: #e6edf3;
   padding: 10px 12px;
   border: 1px solid #d0d0d0;
   border-radius: 10px;
@@ -314,13 +319,13 @@ input, textarea {
 
 /* borda azul ao focar no campo */
 input:focus, textarea:focus {
-  border-color: #0b5cff;
+  border-color: #58a6ff;
 }
 
 /* botão de envio do formulário */
 form button {
   padding: 10px 16px;
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
   border: none;
   border-radius: 10px;
@@ -344,8 +349,8 @@ form button:hover {
   margin: 16px auto;
   padding: 30px;
 
-  background: #fff;
-  border: 1px solid #e8e8e8;
+  background: #161b22;
+  border: 1px solid #30363d;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 
@@ -358,7 +363,7 @@ form button:hover {
   margin-top: 12px;
   padding: 10px 14px;
 
-  background: #0b5cff;
+  background: #1559c9;
   color: white;
 
   border-radius: 10px;
@@ -373,5 +378,7 @@ form button:hover {
 /* efeito ao passar o mouse no quadro */
 .github-box:hover {
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  /* destaca a borda do quadro ao passar o mouse */
+  border-color: #58a6ff;
 }
